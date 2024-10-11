@@ -1,11 +1,15 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
+import { Signup } from "@repo/ui/signup";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <div>
+          <Signup />
+        </div>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -47,7 +51,7 @@ export default function Home() {
           </a>
         </div>
         <Button appName="docs" className={styles.secondary}>
-          Open alert
+          Open alert from docs app
         </Button>
       </main>
       <footer className={styles.footer}>
